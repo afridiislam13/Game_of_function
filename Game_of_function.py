@@ -6,3 +6,6 @@ def sum_numbers():
     total_sum = sum(num_list)
 
     return total_sum
+    
+result = sum_numbers()
+print("Sum:", result)
