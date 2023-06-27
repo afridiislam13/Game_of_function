@@ -1,11 +1,10 @@
-def sum_numbers():
-    num_list = input("Enter a list of numbers (space-separated): ").split()
+def sum_numbers(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
 
-    num_list = [int(num) for num in num_list]
+my_list = list(map(int, input("Enter a list of numbers (space-separated): ").split()))
+result = sum_numbers(my_list)
+print(result)
 
-    total_sum = sum(num_list)
-
-    return total_sum
-    
-result = sum_numbers()
-print("Sum:", result)
